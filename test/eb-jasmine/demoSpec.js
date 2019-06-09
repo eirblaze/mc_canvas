@@ -8,4 +8,7 @@ describe("add関数のテスト", function() {
 	it("1 + 2 は 3", function() {
 		expect(add(1, 2)).toBe(3);
 	});
+	it("1 - 2 は -1", function() {
+		expect(subtract(1, 2)).toBe(-1);
+	});
 });
