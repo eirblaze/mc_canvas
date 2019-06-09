@@ -1,4 +1,4 @@
-import * as demoApp from "../Sources/demoApp";
+import demoApp from "../Sources/demoApp";
 
 describe("Counter", () => {
 	test("adds 1 + 2 to equal 3", () => {
