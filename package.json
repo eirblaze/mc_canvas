@@ -13,7 +13,7 @@
     "inspect-test": "node test/inspect/index.js",
     "test": "karma start test/karma.conf.js --single-run",
     "test-e": "jest",
-    "test-ew": "jest --watch",
+    "test-ew": "yarn test-e -- --watch",
     "doc": "jsdoc -r ./Sources/ -d ./doc -P ./package.json -R ./README.md -c ./jsdoc.conf.json -t ./node_modules/ink-docstrap/template"
   },
   "repository": {
