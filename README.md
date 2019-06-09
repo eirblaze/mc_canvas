@@ -7,3 +7,8 @@ mc_canvas
 ## テストのアドレス
 
 http://127.0.0.1:9876/
+
+
+## 本家に追従する方法
+
+- [GitHubでFork/cloneしたリポジトリを本家リポジトリに追従する](https://qiita.com/xtetsuji/items/555a1ef19ed21ee42873)
