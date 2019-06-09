@@ -12,7 +12,8 @@
     "reformat-all": "prettier --write \"**/*.js\"",
     "inspect-test": "node test/inspect/index.js",
     "test": "karma start test/karma.conf.js --single-run --mode automasao",
-    "test-e": "karma start test/karma.conf.js --single-run --mode eb-jusmine",
+    "test-ew": "karma start test/karma.conf.js --mode eb-jusmine",
+    "test-e": "npm run test-ew -- --single-run",
     "doc": "jsdoc -r ./Sources/ -d ./doc -P ./package.json -R ./README.md -c ./jsdoc.conf.json -t ./node_modules/ink-docstrap/template"
   },
   "repository": {

@@ -49,9 +49,11 @@ module.exports = function(config) {
 
 	// 独自テスト
 	if (config.mode === "eb-jasmine") {
+		console.log("eb - jasmine running...");
 		config_set_args = {
 			logLevel: config.LOG_DEBUG,
-			frameworks: ["jasmine"]
+			frameworks: ["jasmine"],
+			files: ["Sources/demoApp.js", "test/eb-jasmine/*Spec.js"]
 		};
 	}
 
