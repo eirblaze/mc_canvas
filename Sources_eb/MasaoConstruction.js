@@ -1,5 +1,5 @@
 import { GameGraphics } from "./GameGraphics";
-import { GameKey, GameKey_keyPressed, GameKey_keyReleased } from "./GameKey";
+import { GameKey, GameKey_keyReleased } from "./GameKey";
 import { GameMouse, GameMouse_mousePressed, GameMouse_mouseReleased } from "./GameMouse";
 import { Game } from "./GlobalFunctions";
 import { ImageBuff, Color } from "./ImageBuff";
@@ -124,7 +124,7 @@ MasaoConstruction.prototype.init_j = function() {
 	this.gk = new GameKey();
 	var _gk = this.gk;
 	var _handler = function(e) {
-		if (Game.focus.hasFocus(this)) GameKey_keyPressed(_gk, e);
+		if (Game.focus.hasFocus(this)) _gk.keyPressed(e);
 	}.bind(this);
 	document.addEventListener("keydown", _handler);
 	this.__game.__resourceList.push({

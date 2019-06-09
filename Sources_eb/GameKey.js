@@ -232,17 +232,6 @@ GameKey.prototype.getKeyCode = function() {
 }*/
 
 /**
- * GameKey.keyPressedの別名
- * TODO: 消せ
- * @param obj {GameKey}
- * @param e {KeyboardEvent}
- * @constructor
- */
-function GameKey_keyPressed(obj, e) {
-	obj.keyPressed(e);
-}
-
-/**
  * GameKey.keyReleasedの別名
  * TODO: 消せ
  * @param obj {GameKey}
@@ -253,4 +242,4 @@ function GameKey_keyReleased(obj, e) {
 	obj.keyReleased(e);
 }
 
-export { GameKey, GameKey_keyPressed, GameKey_keyReleased };
+export { GameKey, GameKey_keyReleased };
