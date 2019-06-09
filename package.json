@@ -9,13 +9,14 @@
     "build-kani2": "gulp kani2-all",
     "build-v28": "gulp v28",
     "build-all": "gulp all",
-    "build-eb": "gulp eb",
+    "build-e": "gulp eb",
     "reformat-all": "prettier --write \"**/*.js\"",
     "inspect-test": "node test/inspect/index.js",
     "test": "karma start test/karma.conf.js --single-run",
     "test-e": "jest",
     "test-ew": "yarn test-e -- --watch",
-    "doc": "jsdoc -r ./Sources/ -d ./doc -P ./package.json -R ./README.md -c ./jsdoc.conf.json -t ./node_modules/ink-docstrap/template"
+    "doc": "jsdoc -r ./Sources/ -d ./doc -P ./package.json -R ./README.md -c ./jsdoc.conf.json -t ./node_modules/ink-docstrap/template",
+    "doc-e": "jsdoc -r ./Sources_eb/ -d ./doc_eb -P ./package.json -R ./README.md -c ./jsdoc.conf.json -t ./node_modules/ink-docstrap/template"
   },
   "repository": {
     "type": "git",
