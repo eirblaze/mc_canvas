@@ -57,4 +57,5 @@ module.exports = function(config) {
 
 	config.set(config_set_args);
 	//console.log(config);
+	//console.log(config.mode);
 };
