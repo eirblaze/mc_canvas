@@ -11,8 +11,8 @@
     "build-all": "gulp all",
     "reformat-all": "prettier --write \"**/*.js\"",
     "inspect-test": "node test/inspect/index.js",
-    "test": "karma start test/karma.conf.js --single-run --mode automasao",
-    "test-ew": "karma start test/karma.conf.js --mode eb-jusmine",
+    "test": "karma start test/karma.conf.js --single-run",
+    "test-ew": "karma start test/eb-jasmine/karma.conf.js",
     "test-e": "npm run test-ew -- --single-run",
     "doc": "jsdoc -r ./Sources/ -d ./doc -P ./package.json -R ./README.md -c ./jsdoc.conf.json -t ./node_modules/ink-docstrap/template"
   },
