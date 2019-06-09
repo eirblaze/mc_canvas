@@ -12,8 +12,7 @@
     "reformat-all": "prettier --write \"**/*.js\"",
     "inspect-test": "node test/inspect/index.js",
     "test": "karma start test/karma.conf.js --single-run",
-    "test-ew": "karma start test/eb-jasmine/karma.conf.js",
-    "test-e": "npm run test-ew -- --single-run",
+    "test-e": "NODE_ENV=test jest",
     "doc": "jsdoc -r ./Sources/ -d ./doc -P ./package.json -R ./README.md -c ./jsdoc.conf.json -t ./node_modules/ink-docstrap/template"
   },
   "repository": {
@@ -38,6 +37,8 @@
     "babel-cli": "^6.26.0",
     "babel-jest": "^24.8.0",
     "babel-loader": "^7.1.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
     "chai-karma-snapshot": "^0.8.0",
