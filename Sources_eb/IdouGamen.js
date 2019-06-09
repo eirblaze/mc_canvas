@@ -2,6 +2,14 @@ import { CharacterObject } from "./CharacterObject";
 import { createNDimensionArray } from "./GlobalFunctions";
 import { Color } from "./ImageBuff";
 
+/**
+ * たぶん移動関連
+ * @constructor
+ * @param {*} gamegraphics
+ * @param {*} gamekey
+ * @param {*} keyboardmenu
+ * @param {*} mainprogram
+ */
 function IdouGamen(gamegraphics, gamekey, keyboardmenu, mainprogram) {
 	this.gg = gamegraphics;
 	this.gk = gamekey;

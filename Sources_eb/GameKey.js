@@ -95,7 +95,7 @@ GameKey.prototype.keyPressed = function(paramKeyEvent) {
 			paramKeyEvent.preventDefault();
 			this.down_f = true;
 
-			this.tr2_f = true;
+			this.tr2_f = true; // 下ボタンで「しっぽ」発動
 
 			break;
 		case 100:
