@@ -9,6 +9,7 @@
     "build-kani2": "gulp kani2-all",
     "build-v28": "gulp v28",
     "build-all": "gulp all",
+    "build-eb": "gulp eb",
     "reformat-all": "prettier --write \"**/*.js\"",
     "inspect-test": "node test/inspect/index.js",
     "test": "karma start test/karma.conf.js --single-run",

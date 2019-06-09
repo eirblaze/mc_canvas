@@ -15,6 +15,12 @@ gulp.task("fx", function() {
 	return webpackStream(webpackConfig, webpack).pipe(gulp.dest("./Outputs/"));
 });
 
+gulp.task("eb", function() {
+	webpackConfig.entry = "./Sources_eb/index.js";
+	webpackConfig.output.filename = "CanvasMasao_eb.js";
+	return webpackStream(webpackConfig, webpack).pipe(gulp.dest("./Outputs/"));
+});
+
 gulp.task("kani2", function() {
 	return gulp
 		.src(["./Extends/MasaoKani2.js", "Extends/pre.js"])
