@@ -11,6 +11,5 @@ module.exports = {
 		// テスト対象のファイル名にマッチする正規表現文字列の配列 @see https://app.codegrid.net/entry/2018-jest-1
 		// "**/__tests__/**/*.[jt]s?(x)",
 		"**/?(*.)+(spec|test).[jt]s?(x)"
-	],
-	testPathIgnorePatterns: ["/node_modules/", "**/__tests__/**/*.[jt]s?(x)"]
+	]
 };
